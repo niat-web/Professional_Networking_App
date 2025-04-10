@@ -1,0 +1,204 @@
+/* style.css */
+
+/* CSS Variables for Theme */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #343a40;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #17a2b8;
+    --card-bg-color: #ffffff;
+    --border-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+    --bg-color: #343a40;
+    --text-color: #f8f9fa;
+    --primary-color: #66b3ff;
+    --secondary-color: #a7acc2;
+    --accent-color: #5bc0de;
+    --card-bg-color: #495057;
+    --border-color: #6c757d;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--bg-color);
+    border-right: 1px solid var(--border-color);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sidebar .nav-link {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 1.5rem;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Forms */
+.form-control {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    color: white;
+}
+
+#darkModeToggle:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* User Cards */
+#userCards .card {
+    margin-bottom: 1rem;
+}
+
+/* Brutalist elements */
+body {
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .container-fluid .row {
+        display: block;
+    }
+
+    #sidebar {
+        display: block;
+    }
+
+    [class*="col-lg-"], [class*="col-md-"] {
+        width: 100%;
+    }
+}
