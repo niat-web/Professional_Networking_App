@@ -4,7 +4,7 @@
 This JavaScript code demonstrates fundamental JavaScript concepts and their application in building a simple professional networking application. It covers core concepts like primitive types, type conversion, and variable scoping. It also focuses on UI enhancements like dark/light mode and notifications. The application includes form validation, user data fetching from an API, DOM manipulation for displaying user cards, and local storage usage.
 
 ## Output
-<iframe src="https://github.com/niat-web/Professional_Networking_App" height="1000" width="300" title="Professional_Networking_App"></iframe>
+<iframe src="https://niat-web.github.io/Professional_Networking_App/" height="1000" width="300" title="Professional_Networking_App"></iframe>
 
 ## Project Requirements
 **Technologies:** HTML, CSS, JavaScript
